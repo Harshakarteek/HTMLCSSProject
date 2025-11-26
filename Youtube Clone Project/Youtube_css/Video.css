@@ -1,0 +1,99 @@
+.Thumbnail
+        {
+            width: 100%;
+        }
+
+.video_title
+        {
+            margin-top: 0;
+            font-size: 10px;
+            font-weight: bold;
+            line-height: 15px;
+            margin-bottom: 10px;
+        }
+        
+.Channal_image
+        {
+            vertical-align: top;
+        }
+
+.Channel_name,
+.Video_Stats
+        {
+            font-size: 10px;
+        }
+
+.Channel_name
+        {
+            margin-bottom: 5px;
+        }
+
+.Profile_Picture
+        {
+            width: 35px;
+            border-radius: 35px;
+        }
+
+.Channal_info_Grid
+        {
+            display :grid;
+            grid-template-columns: 45px 1fr;
+        }
+
+
+
+
+.videos_grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+
+
+
+.Thumbnail_row
+{
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video_time
+{
+
+    font-size: 12px;
+    font-weight: 500;
+    padding:4px;    
+    position: absolute;
+    background-color: black;
+    color: white;
+    right: 8px;
+    bottom: 8px;
+    border-radius: 2px;
+}
+
+@media (max-width: 750px)
+{
+ .videos_grid
+ {
+    grid-template-columns: 1fr 1fr;
+ }
+}
+
+@media (min-width:751) and (max-width:999)
+{
+     .videos_grid
+        {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+}
+
+@media (min-width: 1000px)
+{
+    .videos_grid
+ {
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+ }
+}

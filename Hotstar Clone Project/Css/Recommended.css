@@ -1,0 +1,151 @@
+
+.recommended {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.section_heading {
+  color: white;
+  font-size: 24px;
+  margin-left: 40px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.card-container {
+  width: 92%;
+  margin: auto;
+  display: flex;
+  gap: 15px;
+  padding: 10px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+
+}
+
+.card-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.card {
+  position: relative;
+  width: 160px;
+  height: 230px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #111827;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card:hover {
+  transform: scale(1.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+   box-shadow: 0 5px 12px rgba(0,0,0,0.4);
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, #111827e0 20%, transparent 80%);
+  opacity: 0;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: opacity 0.35s ease;
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+/* Title */
+.name {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  background: none;
+}
+
+/* Description */
+.des {
+  font-size: 13px;
+  color: #d1d5db;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  background: none;
+}
+
+/* Watchlist button */
+.watchlist-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.watchlist-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Scroll buttons (keep them, even if not used) */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 100%;
+  background: linear-gradient(to right, #0c111b, transparent);
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-btn {
+  right: 0;
+  background: linear-gradient(to left, #0c111b, transparent);
+}
+
+.scroll-btn img {
+  width: 18px;
+  opacity: 0.5;
+  transition: opacity 0.25s ease;
+}
+
+.scroll-btn:hover img {
+  opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+  .card {
+    width: 130px;
+    height: 190px;
+  }
+
+  .video-card-container {
+    height: 22vw;
+  }
+
+  .header_div {
+    padding: 0 20px;
+  }
+}

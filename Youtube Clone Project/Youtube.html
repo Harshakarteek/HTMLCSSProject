@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Youtube Clone</title>
+
+    <link rel="stylesheet" href="Youtube_css/General.css" />
+    <link rel="stylesheet" href="Youtube_css/Header.css" />
+    <link rel="stylesheet" href="Youtube_css/Video.css" />
+    <link rel="stylesheet" href="Youtube_css/Sidebar.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="Header">
+      <!-- Left_section -->
+      <div class="Left_section">
+        <img class="hamburger-menu" src="ICONS/hamburger-menu.svg" />
+
+        <img class="youtube-logo" src="ICONS/youtube-logo.svg" />
+      </div>
+
+      <!-- Middle_section -->
+      <div class="Middle_section">
+        <input class="Searchbox" type="text" placeholder="Search" />
+
+        <button class="Search_button">
+          <img class="Search_icon" src="ICONS/search.svg" />
+          <div class="Tooltip">Search</div>
+        </button>
+
+        <button class="Mic_button">
+          <img class="Mic_icon" src="ICONS/voice-search-icon.svg" />
+          <div class="Tooltip">Search With Your Voice</div>
+        </button>
+      </div>
+
+      <!-- Right_section -->
+      <div class="Right_section">
+        <div class="Create_icon_Container">
+          <img class="Create_icon" src="ICONS/upload.svg" />
+          <div class="Tooltip">Create</div>
+        </div>
+
+        <div class="yt_apps_icon_Container">
+          <img class="yt_apps_icon" src="Icons/youtube-apps.svg" />
+          <div class="Tooltip">Youtube Apps</div>
+        </div>
+
+        <div class="Notification_icon_container">
+          <img class="Notification_icon" src="ICONS/notifications.svg" />
+          <div class="Notication_count">3</div>
+          <div class="Tooltip">notifications</div>
+        </div>
+
+        <div class="Self_Channal_icon_Container">
+          <img class="Self_Channal_icon" src="Channal_images/channel-1.jpeg" />
+          <div class="Tooltip">Your Channal</div>
+        </div>
+      </div>
+    </header>
+
+    <nav Class="Side_bar">
+      <div class="Side_bar_Link">
+        <img src="Icons/home.svg" />
+        <div>Home</div>
+      </div>
+
+      <div class="Side_bar_Link">
+        <img src="Icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+
+      <div class="Side_bar_Link">
+        <img src="Icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+
+      <div class="Side_bar_Link">
+        <img src="Icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+
+      <div class="Side_bar_Link">
+        <img src="Icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+
+      <div class="Side_bar_Link">
+        <img src="Icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="videos_grid">
+        <!-- video grid container -->
+        <!-- First video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/thumbnail-1.webp" />
+
+            <div class="video_time">14:20</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channel-1.jpeg"
+              />
+            </div>
+            <div class="Video_info">
+              <p class="video_title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+
+              <p class="Channel_name">Marques Brownlee</p>
+
+              <p class="Video_Stats">3.4M views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- second video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/thumbnail-2.webp" />
+
+            <div class="video_time">8:22</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channel-2.jpeg"
+              />
+            </div>
+            <div class="Video_info">
+              <p class="video_title">Try Not To Laugh Challenge #9</p>
+
+              <p class="Channel_name">Markiplier</p>
+
+              <p class="Video_Stats">19M views · 4 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Third video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/thumbnail-3.webp" />
+
+            <div class="video_time">9:13</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channel-3.jpeg"
+              />
+            </div>
+            <div class="Video_info">
+              <p class="video_title">
+                Crazy Tik Toks Taken Moments Before DISASTER
+              </p>
+
+              <p class="Channel_name">SSSniperWolf</p>
+
+              <p class="Video_Stats">12M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/thumbnail-4.webp" />
+
+            <div class="video_time">22:09</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channel-4.jpeg"
+              />
+
+              <div class="video_time">14:20</div>
+            </div>
+            <div class="Video_info">
+              <p class="video_title">
+                The Simplest Math Problem No One Can Solve - Collatz Conjecture
+              </p>
+
+              <p class="Channel_name">Veritasium</p>
+
+              <p class="Video_Stats">18M views &#183; 4 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/thumbnail-5.webp" />
+            <div class="video_time">11:17</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channel-5.jpeg"
+              />
+            </div>
+            <div class="Video_info">
+              <p class="video_title">
+                Kadane's Algorithm to Maximum Sum Subarray Problem
+              </p>
+
+              <p class="Channel_name">CS Dojo</p>
+
+              <p class="Video_Stats">519K views &#183; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/thumbnail-6.webp" />
+            <div class="video_time">19:59</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channel-6.jpeg"
+              />
+            </div>
+            <div class="Video_info">
+              <p class="video_title">
+                Anything You Can Fit In The Circle I’ll Pay For
+              </p>
+
+              <p class="Channel_name">MrBeast</p>
+
+              <p class="Video_Stats">141M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7th video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/Thumbnail-7.avif" />
+            <div class="video_time">19:59</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channels_7.jpg"
+              />
+            </div>
+            <div class="Video_info">
+              <p class="video_title">Project Hail Mary | Official Trailer 2</p>
+
+              <p class="Channel_name">Amazon MGM Studios</p>
+
+              <p class="Video_Stats">8.4M views &#183; 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8th video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/Thumbnail-8.avif" />
+            <div class="video_time">19:59</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channels_8.jpg"
+              />
+            </div>
+            <div class="Video_info">
+              <p class="video_title">
+                Guntur Kaaram Theatrical Trailer | Mahesh Babu, Sreeleela |
+                Trivikram | Thaman
+              </p>
+
+              <p class="Channel_name">Haarika & Hassine Creations</p>
+
+              <p class="Video_Stats">53M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9th video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/Thumbnail-9.avif" />
+            <div class="video_time">19:59</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channels_9.jpg"
+              />
+            </div>
+            <div class="Video_info">
+              <p class="video_title">
+                Baahubali - The Epic Release Trailer 2 (Telugu) | Prabhas, Rana
+                | SS Rajamouli | 31st October 2025
+              </p>
+
+              <p class="Channel_name">Baahubali Movie</p>
+
+              <p class="Video_Stats">5.9m views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+
+         <!-- 10th video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/thumbnail-1.webp" />
+
+            <div class="video_time">14:20</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channel-1.jpeg"
+              />
+            </div>
+            <div class="Video_info">
+              <p class="video_title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+
+              <p class="Channel_name">Marques Brownlee</p>
+
+              <p class="Video_Stats">3.4M views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11th video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/thumbnail-2.webp" />
+
+            <div class="video_time">8:22</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channel-2.jpeg"
+              />
+            </div>
+            <div class="Video_info">
+              <p class="video_title">Try Not To Laugh Challenge #9</p>
+
+              <p class="Channel_name">Markiplier</p>
+
+              <p class="Video_Stats">19M views · 4 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12th video -->
+        <div class="video_format">
+          <div class="Thumbnail_row">
+            <img class="Thumbnail" src="Thumbnails/thumbnail-3.webp" />
+
+            <div class="video_time">9:13</div>
+          </div>
+          <div class="Channal_info_Grid">
+            <div class="Channal_image">
+              <img
+                class="Profile_Picture"
+                src="Channal_images/channel-3.jpeg"
+              />
+            </div>
+            <div class="Video_info">
+              <p class="video_title">
+                Crazy Tik Toks Taken Moments Before DISASTER
+              </p>
+
+              <p class="Channel_name">SSSniperWolf</p>
+
+              <p class="Video_Stats">12M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+    </main>
+
+    
+  </body>
+</html>

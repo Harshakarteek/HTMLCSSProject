@@ -1,0 +1,43 @@
+.Side_bar
+{
+     position: fixed;
+     top: 50px;
+     bottom: 0;
+     left: 0;
+     width: 80px;
+     z-index: 200;
+     padding-top: 5px;
+     background-color: white;
+}
+
+
+.Side_bar_Link
+{
+    height: 74px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    cursor: pointer;
+}
+
+.Side_bar_Link:hover
+{
+    background-color: rgb(235, 235, 235);
+}
+
+
+.Side_bar_Link img
+{
+ height: 25px;
+ margin-bottom: 4px;
+}
+
+.Side_bar_Link div
+{
+     font-size: 10px;
+}

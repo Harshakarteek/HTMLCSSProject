@@ -1,0 +1,57 @@
+.section_heading {
+  color: white;
+  margin-left: 40px;
+}
+
+.video-card-container {
+  position: relative;
+  width: 92%;
+  margin: auto;
+  height: 10vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.video-card {
+  position: relative;
+  width: calc(100% / 5 - 10px);
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #030b17;
+  cursor: pointer;
+}
+
+
+.video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+
+.video-card video {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+
+  opacity: 0;
+}
+
+.video-card:hover video {
+  opacity: 1;
+}
+
+.video-card:hover img {
+  opacity: 0;
+}

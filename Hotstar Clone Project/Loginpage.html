@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotstar Login</title>
+    <link rel="stylesheet" href="Css/Loginpage.css" />
+  </head>
+
+  <body>
+    <div class="login_container">
+      <div class="qr_section">
+        <img
+          src="Assets/images/Qrcode.png"
+          class="qr_image"
+        />
+
+        <h3>Use Camera App to Scan QR</h3>
+        <p>
+          Click on the link generated to<br />redirect to JioHotstar mobile app
+        </p>
+      </div>
+
+      <div class="divider">
+        <span>OR</span>
+      </div>
+
+      <div class="phone_section">
+        <h2>Login or sign up to continue</h2>
+        <h4>Scan QR code or enter phone number to login</h4>
+
+        <form>
+          <div class="input_group">
+            <label>Enter mobile number</label>
+            <div class="phone_box">
+              <span class="country_code">+91</span>
+              <input type="number" placeholder="Enter mobile number" required />
+            </div>
+          </div>
+          <button type="button" class="login_btn" onclick="window.location.href='Hotstar.html'">Go Back</button>
+          <button type="submit" class="login_btn">Continue</button>
+        </form>
+
+        <p class="help_text">
+          Having trouble logging in? <a href="#">Get Help</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

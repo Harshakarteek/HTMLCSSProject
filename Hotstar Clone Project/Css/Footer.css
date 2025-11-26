@@ -1,0 +1,21 @@
+.last-footer {
+ width: 92%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #222;
+  color: white;
+}
+.dwn {
+  min-width: 100%;
+  width: 100px;
+  height: 100%;
+}
+.last-footer-links,
+.last-footer-images {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+}

@@ -1,0 +1,142 @@
+body {
+  background-color: #0f1014;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.login_container {
+  width: 70%;
+  max-width: 850px;
+  padding: 40px;
+
+  background-color: #1a1c22;
+  border-radius: 20px;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+
+.qr_section {
+  width: 45%;
+  text-align: center;
+}
+
+.qr_image {
+  width: 230px;
+  height: 230px;
+  border-radius: 20px;
+}
+
+.qr_section h3 {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.qr_section p {
+  opacity: 0.7;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* DIVIDER */
+.divider {
+  width: 1px;
+  background-color: rgba(255,255,255,0.2);
+  height: 350px;
+  position: relative;
+}
+
+.divider span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1a1c22;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.phone_section {
+  width: 45%;
+}
+
+.phone_section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.phone_section h4 {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+.input_group label {
+  display: block;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+.phone_box {
+  display: flex;
+  align-items: center;
+
+  background-color: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.2);
+
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.country_code {
+  margin-right: 10px;
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+.phone_box input {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.login_btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #1f80e0;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login_btn:hover {
+  background-color: #1667b8;
+}
+
+.help_text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.help_text a {
+  color: #1f80e0;
+}
